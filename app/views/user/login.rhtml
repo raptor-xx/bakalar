@@ -1,0 +1,21 @@
+<div class="login-form">
+  <fieldset>
+    <legend>Prosím zalogujte se</legend>
+
+    <% form_tag do %>
+      <p>
+        <label for="name">Jméno:</label>
+        <%= text_field_tag :name, params[:name] %>
+      </p>
+
+      <p>
+        <label for="password">Heslo:</label>
+        <%= password_field_tag :password, params[:password] %>
+      </p>
+  
+      <p>
+        <%= submit_tag "Přihlásit" %>
+      </p>
+    <% end %>
+  </fieldset>
+</div>
