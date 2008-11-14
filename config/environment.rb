@@ -11,6 +11,8 @@ RAILS_GEM_VERSION = '2.1.2' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+  
+  config.action_controller.session = { :session_key => "_myapp_session", :secret => "b836b5a8578d3c74a5dbd0956102784f864e7b67" }
   # Settings in config/environments/* take precedence over those specified here
 
   # Skip frameworks you're not going to use (only works if using vendor/rails)
