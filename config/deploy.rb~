@@ -1,5 +1,5 @@
 set :application, "bakalar"
-set :repository, "git://github.com/raptor/bakalar.git"
+set :repository, "cesta_k_vasemu_repositari"
 set :scm, "git"
 
 role :web, "server3.railshosting.cz"
