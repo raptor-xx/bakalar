@@ -6079,27 +6079,245 @@ Processing UsersController#index (for 127.0.0.1 at 2008-11-18 17:32:33) [GET]
 Rendering template within layouts/users
 Rendering users/index
 Completed in 0.01622 (61 reqs/sec) | Rendering: 0.00227 (13%) | DB: 0.00444 (27%) | 200 OK [http://localhost/users]
-  [4;36;1mSQL (0.000102)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.000049)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-  [4;36;1mSQL (0.037521)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mSQL (0.020554)[0m   [0mSELECT version FROM schema_migrations[0m
-  [4;36;1mSQL (0.000070)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.000045)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-  [4;36;1mSQL (0.032144)[0m   [0;1mDROP DATABASE IF EXISTS `bakalar_test`[0m
-  [4;35;1mSQL (0.068559)[0m   [0mCREATE DATABASE `bakalar_test` DEFAULT CHARACTER SET `utf8`[0m
-  [4;36;1mSQL (0.000066)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000038)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000111)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000172)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSessions (20081117103951)
+  [4;36;1mSQL (0.040074)[0m   [0;1mDROP TABLE `sessions`[0m
+  [4;35;1mSQL (0.000409)[0m   [0mDELETE FROM schema_migrations WHERE version = '20081117103951'[0m
+Migrating to AddUserRoot (20081114231318)
+  [4;36;1mUser Delete all (0.000399)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.000441)[0m   [0mDELETE FROM schema_migrations WHERE version = '20081114231318'[0m
+Migrating to CreateUsers (20081114170735)
+  [4;36;1mSQL (0.012133)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (0.000505)[0m   [0mDELETE FROM schema_migrations WHERE version = '20081114170735'[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000114)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mSHOW TABLES[0m
+/!\ FAILSAFE /!\  Tue Nov 18 20:58:32 +0100 2008
+  Status: 500 Internal Server Error
+  Mysql::Error: Table 'bakalar_development.sessions' doesn't exist: SELECT * FROM `sessions`     WHERE (session_id = '19c063bfe9e2b230c7ff305d3e49ee54')  LIMIT 1
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:302:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:537:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:586:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:1345:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:1307:in `find_initial'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:538:in `find'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session/active_record_store.rb:113:in `find_by_session_id'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session/active_record_store.rb:288:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:1267:in `silence'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session/active_record_store.rb:288:in `initialize'
+    /usr/lib/ruby/1.8/cgi/session.rb:273:in `new'
+    /usr/lib/ruby/1.8/cgi/session.rb:273:in `initialize_without_cgi_reader'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_ext/session.rb:39:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:132:in `new'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:132:in `session'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:116:in `session'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1139:in `assign_shortcuts_without_flash'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:523:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/webrick_server.rb:62:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/commands/server.rb:39
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.000082)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.000048)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-  [4;36;1mSQL (0.000164)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mSQL (0.153471)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) DEFAULT '' NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
-  [4;36;1mSQL (0.072707)[0m   [0;1mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
-  [4;35;1mSQL (0.033200)[0m   [0mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
-  [4;36;1mSQL (0.000184)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mSQL (0.023101)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
-  [4;36;1mSQL (0.000172)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mSQL (0.023757)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [4;36;1mSQL (0.028408)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
-  [4;35;1mSQL (0.000179)[0m   [0mSHOW TABLES[0m
-  [4;36;1mSQL (0.000913)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
-  [4;35;1mSQL (0.000418)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081117103951')[0m
-  [4;36;1mSQL (0.000331)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081114170735')[0m
-  [4;35;1mSQL (0.000333)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081114231318')[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000180)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081114170735)
+  [4;36;1mSQL (0.096587)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000463)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081114170735')[0m
+Migrating to AddUserRoot (20081114231318)
+  [4;36;1mUser Delete all (0.000237)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Columns (0.000782)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000798)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000183)[0m   [0mSELECT `name` FROM `users` WHERE (`users`.name = 'root') [0m
+  [4;36;1mUser Create (0.000171)[0m   [0;1mINSERT INTO `users` (`name`, `updated_at`, `hashed_password`, `created_at`) VALUES('root', '2008-11-18 19:59:06', 'dc76e9f0c0006e8f919e0c515c66dbba3982f785', '2008-11-18 19:59:06')[0m
+  [4;35;1mSQL (0.000309)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000342)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081114231318')[0m
+Migrating to CreateSessions (20081117103951)
+  [4;35;1mSQL (0.026825)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.024567)[0m   [0;1mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;35;1mSQL (0.038595)[0m   [0mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;36;1mSQL (0.000426)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081117103951')[0m
+  [4;35;1mSQL (0.000250)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000157)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000814)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (0.001512)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.000347)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (0.000676)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000673)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000241)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000038)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000110)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000045)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000037)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.054187)[0m   [0;1mDROP DATABASE IF EXISTS `bakalar_test`[0m
+  [4;35;1mSQL (0.000145)[0m   [0mCREATE DATABASE `bakalar_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000048)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000037)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.025190)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) DEFAULT '' NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.019810)[0m   [0;1mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;35;1mSQL (0.025555)[0m   [0mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;36;1mSQL (0.001277)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.045320)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.026548)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.035116)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000235)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000423)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081117103951')[0m
+  [4;36;1mSQL (0.000380)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081114170735')[0m
+  [4;35;1mSQL (0.000412)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081114231318')[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000038)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000230)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001682)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSessions (20081117103951)
+  [4;36;1mSQL (0.065545)[0m   [0;1mDROP TABLE `sessions`[0m
+  [4;35;1mSQL (0.000481)[0m   [0mDELETE FROM schema_migrations WHERE version = '20081117103951'[0m
+Migrating to AddUserRoot (20081114231318)
+  [4;36;1mUser Delete all (0.000969)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.000467)[0m   [0mDELETE FROM schema_migrations WHERE version = '20081114231318'[0m
+Migrating to CreateUsers (20081114170735)
+  [4;36;1mSQL (0.001103)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (0.007784)[0m   [0mDELETE FROM schema_migrations WHERE version = '20081114170735'[0m
+  [4;36;1mSQL (0.000256)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002214)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000437)[0m   [0;1mSHOW TABLES[0m
+/!\ FAILSAFE /!\  Tue Nov 18 21:00:27 +0100 2008
+  Status: 500 Internal Server Error
+  Mysql::Error: Table 'bakalar_development.sessions' doesn't exist: SELECT * FROM `sessions`     WHERE (session_id = '199e29dad3f66f04e346db8657342990')  LIMIT 1
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:302:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:537:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:586:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:1345:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:1307:in `find_initial'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:538:in `find'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session/active_record_store.rb:113:in `find_by_session_id'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session/active_record_store.rb:288:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/base.rb:1267:in `silence'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session/active_record_store.rb:288:in `initialize'
+    /usr/lib/ruby/1.8/cgi/session.rb:273:in `new'
+    /usr/lib/ruby/1.8/cgi/session.rb:273:in `initialize_without_cgi_reader'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_ext/session.rb:39:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:132:in `new'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:132:in `session'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/cgi_process.rb:116:in `session'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1139:in `assign_shortcuts_without_flash'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:523:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/webrick_server.rb:62:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.2/lib/commands/server.rb:39
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.000073)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000039)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000157)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081114170735)
+  [4;36;1mSQL (0.088069)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000351)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081114170735')[0m
+Migrating to AddUserRoot (20081114231318)
+  [4;36;1mUser Delete all (0.000175)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Columns (0.000510)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000043)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mSELECT `name` FROM `users` WHERE (`users`.name = 'root') [0m
+  [4;36;1mUser Create (0.000123)[0m   [0;1mINSERT INTO `users` (`name`, `updated_at`, `hashed_password`, `created_at`) VALUES('root', '2008-11-18 20:00:36', 'dc76e9f0c0006e8f919e0c515c66dbba3982f785', '2008-11-18 20:00:36')[0m
+  [4;35;1mSQL (0.004613)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.014753)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081114231318')[0m
+Migrating to CreateSessions (20081117103951)
+  [4;35;1mSQL (0.018685)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.023570)[0m   [0;1mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;35;1mSQL (0.057520)[0m   [0mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;36;1mSQL (0.000831)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081117103951')[0m
+  [4;35;1mSQL (0.000236)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000158)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000825)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (0.000665)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.000327)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (0.002839)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000671)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.001345)[0m   [0mSHOW KEYS FROM `users`[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2008-11-18 21:00:42) [GET]
+  Session ID: 6d7968ca85ef16452f8558367bad15dd
+  Parameters: {"action"=>"login", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 0.00521 (191 reqs/sec) | Rendering: 0.00217 (41%) | DB: 0.00040 (7%) | 200 OK [http://localhost/admin/login]
