@@ -18778,3 +18778,37 @@ Completed in 22ms (View: 8, DB: 3) | 200 OK [http://localhost/cashbooks]
   [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081114231318')[0m
   [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081120113703')[0m
   [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081210191048')[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2008-12-17 23:22:48) [GET]
+  Session ID: 419f1cf60a9eca25fc46d4f1f0ed2923
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Redirected to actionlogincontrolleradmin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 17ms (DB: 2) | 302 Found [http://localhost/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2008-12-17 23:22:48) [GET]
+  Session ID: 419f1cf60a9eca25fc46d4f1f0ed2923
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2008-12-17 23:22:56) [POST]
+  Session ID: 419f1cf60a9eca25fc46d4f1f0ed2923
+  Parameters: {"name"=>"raptor", "commit"=>"Přihlášení", "authenticity_token"=>"13b6c81fcf23b51effe7a5af00be3eb5f592abf1", "password"=>"login2"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`name` = 'raptor') LIMIT 1[0m
+Redirected to /
+Completed in 14ms (DB: 2) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2008-12-17 23:22:56) [GET]
+  Session ID: 419f1cf60a9eca25fc46d4f1f0ed2923
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 21ms (View: 8, DB: 2) | 200 OK [http://localhost/]
