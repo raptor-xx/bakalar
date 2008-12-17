@@ -91,3 +91,7 @@ Redirected to http://test.host/admin/login
 Filter chain halted as [:authorize] rendered_or_redirected.
 Completed in 0.00092 (1081 reqs/sec) | DB: 0.00034 (37%) | 302 Found [http://test.host/users/953125641?]
   [4;36;1mSQL (0.000080)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
