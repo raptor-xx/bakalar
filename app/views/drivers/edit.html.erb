@@ -1,0 +1,32 @@
+<h1>Změna řidiče</h1>
+
+<% form_for(@driver) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :jméno %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :příjmení %><br />
+    <%= f.text_field :surname %>
+  </p>
+  <p>
+    <%= f.label :rodné_číslo %><br />
+    <%= f.text_field :personal_id %>
+  </p>
+  <p>
+    <%= f.label :Řidičský_průkaz %><br />
+    <%= f.text_field :driving_licence %>
+  </p>
+  <p>
+    <%= f.label :Telefon %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.submit "Změnit" %>
+  </p>
+<% end %>
+
+<%= link_to 'Ukaž', @driver %> |
+<%= link_to 'Zpět', drivers_path %>

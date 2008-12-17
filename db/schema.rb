@@ -9,7 +9,60 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081117103951) do
+ActiveRecord::Schema.define(:version => 20081211141749) do
+
+  create_table "cars", :force => true do |t|
+    t.string   "SPZ"
+    t.string   "marque"
+    t.string   "type"
+    t.date     "manufactured"
+    t.date     "acquisition"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "customers", :force => true do |t|
+    t.string   "company"
+    t.string   "street"
+    t.integer  "street_number"
+    t.string   "town"
+    t.integer  "phone"
+    t.string   "email"
+    t.integer  "fax"
+    t.string   "web"
+    t.integer  "ICO"
+    t.integer  "DIC"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "drivers", :force => true do |t|
+    t.string   "name"
+    t.string   "surname"
+    t.integer  "personal_id"
+    t.string   "driving_licence"
+    t.integer  "phone"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "journeys", :force => true do |t|
+    t.datetime "begun"
+    t.datetime "finished"
+    t.string   "from_where"
+    t.string   "to_where"
+    t.text     "purpose"
+    t.integer  "driver_id"
+    t.integer  "car_id"
+    t.integer  "tachymetr_before"
+    t.integer  "tachmetr_after"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :default => "", :null => false

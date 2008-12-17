@@ -1,0 +1,28 @@
+<h1>Výpis aut</h1>
+
+<table>
+  <tr>
+    <th>Spz</th>
+    <th>Značka</th>
+    <th>Typ</th>
+    <th>Vyrobeno</th>
+    <th>Získáno</th>
+  </tr>
+
+<% for car in @cars %>
+  <tr>
+    <td><%=h car.SPZ %></td>
+    <td><%=h car.marque %></td>
+    <td><%=h car.type %></td>
+    <td><%=h car.manufactured %></td>
+    <td><%=h car.acquisition %></td>
+    <td><%= link_to 'Ukaž', car %></td>
+    <td><%= link_to 'Změnit', edit_car_path(car) %></td>
+    <td><%= link_to 'Smazat', car, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nové auto', new_car_path %>

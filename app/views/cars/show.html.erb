@@ -1,0 +1,29 @@
+<p>
+  <b>Spz:</b>
+  <%=h @car.SPZ %>
+</p>
+
+<p>
+  <b>Značka:</b>
+  <%=h @car.marque %>
+</p>
+
+<p>
+  <b>Typ:</b>
+  <%=h @car.type %>
+</p>
+
+<p>
+  <b>Vyrobeno:</b>
+  <%=h @car.manufactured %>
+</p>
+
+<p>
+  <b>Získáno:</b>
+  <%=h @car.acquisition %>
+</p>
+
+
+
+<%= link_to 'Změnit', edit_car_path(@car) %> |
+<%= link_to 'Zpět', cars_path %>

@@ -1,24 +1,24 @@
-<h1>Editing user</h1>
+<h1>Změna uživatele</h1>
 
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :jméno %><br />
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :password %><br />
+    <%= f.label :heslo %><br />
     <%= f.password_field :password %>
   </p>
   <p>
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :ověření_hesla %><br />
     <%= f.password_field :password_confirmation %>
   </p>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit "Změnit" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Ukaž', @user %> |
+<%= link_to 'Zpět', users_path %>

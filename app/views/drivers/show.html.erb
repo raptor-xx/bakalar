@@ -1,0 +1,28 @@
+<p>
+  <b>Jméno:</b>
+  <%=h @driver.name %>
+</p>
+
+<p>
+  <b>Příjmení:</b>
+  <%=h @driver.surname %>
+</p>
+
+<p>
+  <b>Rodné číslo:</b>
+  <%=h @driver.personal_id %>
+</p>
+
+<p>
+  <b>Řidičský průkaz:</b>
+  <%=h @driver.driving_licence %>
+</p>
+
+<p>
+  <b>Telefon:</b>
+  <%=h @driver.phone %>
+</p>
+
+
+<%= link_to 'Změnit', edit_driver_path(@driver) %> |
+<%= link_to 'Zpět', drivers_path %>

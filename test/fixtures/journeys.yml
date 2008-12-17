@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  begun: 2008-12-11 15:17:49
+  finished: 2008-12-11 15:17:49
+  from_where: MyString
+  to_where: MyString
+  purpose: MyText
+  driver_id: 1
+  car_id: 1
+  tachymetr_before: 1
+  tachmetr_after: 1
+  user_id: 1
+
+two:
+  begun: 2008-12-11 15:17:49
+  finished: 2008-12-11 15:17:49
+  from_where: MyString
+  to_where: MyString
+  purpose: MyText
+  driver_id: 1
+  car_id: 1
+  tachymetr_before: 1
+  tachmetr_after: 1
+  user_id: 1

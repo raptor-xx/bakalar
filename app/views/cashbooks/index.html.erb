@@ -1,0 +1,32 @@
+<h1>Výpis peněžního deníku</h1>
+
+<table>
+  <tr>
+    <th>Pohyb</th>
+    <th>Zákazník</th>
+    <th>Datum</th>
+    <th>Kde</th>
+    <th>Částka</th>
+    <th>Dph</th>
+    <th>Poznámka</th>
+  </tr>
+
+<% for cashbook in @cashbooks %>
+  <tr>
+    <td><%=h @movement[cashbook.movement] %></td>
+    <td><%=h cashbook.customer_id %></td>
+    <td><%=h cashbook.when %></td>
+    <td><%=h @where[cashbook.where] %></td>
+    <td><%=h cashbook.amount %></td>
+    <td><%=h @DPH[cashbook.DPH] %></td>
+    <td><%=h cashbook.comment %></td>
+    <td><%= link_to 'Ukaž', cashbook %></td>
+    <td><%= link_to 'Změnit', edit_cashbook_path(cashbook) %></td>
+    <td><%= link_to 'Smazat', cashbook, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nová položka peněžního deníku', new_cashbook_path %>

@@ -1,0 +1,38 @@
+<p>
+  <b>Pohyb:</b>
+  <%=h @movement[@cashbook.movement] %>
+</p>
+
+<p>
+  <b>Zákazník:</b>
+  <%=h @customer.company %>
+</p>
+
+<p>
+  <b>Datum:</b>
+  <%=h @cashbook.when %>
+</p>
+
+<p>
+  <b>Kde:</b>
+  <%=h @where[@cashbook.where] %>
+</p>
+
+<p>
+  <b>Částka:</b>
+  <%=h @cashbook.amount %>
+</p>
+
+<p>
+  <b>Dph:</b>
+  <%=h @DPH[@cashbook.DPH] %>
+</p>
+
+<p>
+  <b>Poznámka:</b>
+  <%=h @cashbook.comment %>
+</p>
+
+
+<%= link_to 'Změnit', edit_cashbook_path(@cashbook) %> |
+<%= link_to 'Zpět', cashbooks_path %>

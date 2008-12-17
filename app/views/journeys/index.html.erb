@@ -1,0 +1,36 @@
+<h1>Listing journeys</h1>
+
+<table>
+  <tr>
+    <th>Od kdy</th>
+    <th>Do kdy</th>
+    <th>Odkud</th>
+    <th>Kam</th>
+    <th>Důvod</th>
+    <th>Řidič</th>
+    <th>Auto</th>
+    <th>Tachometr před</th>
+    <th>Tachometr po</th>
+  </tr>
+
+<% for journey in @journeys %>
+  <tr>
+    <td><%=h journey.begun %></td>
+    <td><%=h journey.finished %></td>
+    <td><%=h journey.from_where %></td>
+    <td><%=h journey.to_where %></td>
+    <td><%=h journey.purpose %></td>
+    <td><%=h Driver.find(journey.driver_id).personal_id %></td>
+    <td><%=h Car.find(journey.car_id).SPZ %></td>
+    <td><%=h journey.tachymetr_before %></td>
+    <td><%=h journey.tachmetr_after %></td>
+    <td><%= link_to 'Ukaž', journey %></td>
+    <td><%= link_to 'Změnit', edit_journey_path(journey) %></td>
+    <td><%= link_to 'Smazat', journey, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nová služební cesta', new_journey_path %>

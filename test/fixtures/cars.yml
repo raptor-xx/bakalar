@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  SPZ: MyString
+  marque: MyString
+  type: MyString
+  manufactured: 2008-12-10
+  acquisition: 2008-12-10
+  user_id: 1
+
+two:
+  SPZ: MyString
+  marque: MyString
+  type: MyString
+  manufactured: 2008-12-10
+  acquisition: 2008-12-10
+  user_id: 1

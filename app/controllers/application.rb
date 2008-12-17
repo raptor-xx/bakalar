@@ -19,10 +19,6 @@ class ApplicationController < ActionController::Base
   
   def authorize
     session[:original_uri] = request.request_uri
-    if @autorize_called
-      return #rails nerady twice redirect
-    end
-    @autorize_called = true
     unless User.find_by_id(session[:user_id])
       flash[:notice] = "Please log in"
       redirect_to(:controller => "admin", :action => "login")

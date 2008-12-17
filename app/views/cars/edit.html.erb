@@ -1,0 +1,32 @@
+<h1>Změna auta</h1>
+
+<% form_for(@car) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :SPZ %><br />
+    <%= f.text_field :SPZ %>
+  </p>
+  <p>
+    <%= f.label :značka %><br />
+    <%= f.text_field :marque %>
+  </p>
+  <p>
+    <%= f.label :typ %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :vyrobeno %><br />
+    <%= f.date_select :manufactured %>
+  </p>
+  <p>
+    <%= f.label :získáno %><br />
+    <%= f.date_select :acquisition %>
+  </p>
+  <p>
+    <%= f.submit "Změnit" %>
+  </p>
+<% end %>
+
+<%= link_to 'Ukaž', @car %> |
+<%= link_to 'Zpět', cars_path %>

@@ -1,0 +1,48 @@
+<p>
+  <b>Od kdy:</b>
+  <%=h @journey.begun %>
+</p>
+
+<p>
+  <b>Do kdy:</b>
+  <%=h @journey.finished %>
+</p>
+
+<p>
+  <b>Odkud:</b>
+  <%=h @journey.from_where %>
+</p>
+
+<p>
+  <b>Kam:</b>
+  <%=h @journey.to_where %>
+</p>
+
+<p>
+  <b>Důvod:</b>
+  <%=h @journey.purpose %>
+</p>
+
+<p>
+  <b>Řidič:</b>
+  <%=h @driver.personal_id %>
+</p>
+
+<p>
+  <b>Auto:</b>
+  <%=h @car.SPZ %>
+</p>
+
+<p>
+  <b>Tachometr před:</b>
+  <%=h @journey.tachymetr_before %>
+</p>
+
+<p>
+  <b>Tachometr po:</b>
+  <%=h @journey.tachmetr_after %>
+</p>
+
+
+<%= link_to 'Změnit', edit_journey_path(@journey) %> |
+<%= link_to 'Zpět', journeys_path %>

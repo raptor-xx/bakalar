@@ -1,23 +1,23 @@
-<h1>New user</h1>
+<h1>Nový uživatel</h1>
 
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :jméno %><br />
     <%= f.text_field :name, :size => 40 %>
   </p>
   <p>
-    <%= f.label :user_password %><br />
+    <%= f.label :heslo %><br />
     <%= f.password_field :password, :size => 40 %>
   </p>
   <p>
-    <%= f.label :user_password_confirmation %><br />
+    <%= f.label :ověření_hesla %><br />
     <%= f.password_field :password_confirmation, :size => 40 %>
   </p>
   <p>
-    <%= f.submit "Create" %>
+    <%= f.submit "Vytvořit" %>
   </p>
 <% end %>
 
-<%= link_to 'Back', users_path %>
+<%= link_to 'Zpět', users_path %>

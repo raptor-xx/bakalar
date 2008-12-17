@@ -1,0 +1,28 @@
+<h1>Výpis řidičů</h1>
+
+<table>
+  <tr>
+    <th>Jméno</th>
+    <th>Příjmení</th>
+    <th>Rodné číslo</th>
+    <th>Řidičský průkaz</th>
+    <th>Telefon</th>
+  </tr>
+
+<% for driver in @drivers %>
+  <tr>
+    <td><%=h driver.name %></td>
+    <td><%=h driver.surname %></td>
+    <td><%=h driver.personal_id %></td>
+    <td><%=h driver.driving_licence %></td>
+    <td><%=h driver.phone %></td>
+    <td><%= link_to 'Ukaž', driver %></td>
+    <td><%= link_to 'Změnit', edit_driver_path(driver) %></td>
+    <td><%= link_to 'Smazat', driver, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nový řidič', new_driver_path %>

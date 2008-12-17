@@ -1,0 +1,48 @@
+<h1>Změna služební cesty</h1>
+
+<% form_for(@journey) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :od_kdy %><br />
+    <%= f.datetime_select :begun %>
+  </p>
+  <p>
+    <%= f.label :do_kdy %><br />
+    <%= f.datetime_select :finished %>
+  </p>
+  <p>
+    <%= f.label :odkud %><br />
+    <%= f.text_field :from_where %>
+  </p>
+  <p>
+    <%= f.label :kam %><br />
+    <%= f.text_field :to_where %>
+  </p>
+  <p>
+    <%= f.label :důvod %><br />
+    <%= f.text_area :purpose %>
+  </p>
+  <p>
+    <%= f.label :Řidič %><br />
+    <%= f.select :driver_id, @drivers %>
+  </p>
+  <p>
+    <%= f.label :auto %><br />
+    <%= f.select :car_id, @cars %>
+  </p>
+  <p>
+    <%= f.label :tachometr_před %><br />
+    <%= f.text_field :tachymetr_before %>
+  </p>
+  <p>
+    <%= f.label :tachometr_po %><br />
+    <%= f.text_field :tachmetr_after %>
+  </p>
+  <p>
+    <%= f.submit "Změnit" %>
+  </p>
+<% end %>
+
+<%= link_to 'Ukaž', @journey %> |
+<%= link_to 'Zpět', journeys_path %>

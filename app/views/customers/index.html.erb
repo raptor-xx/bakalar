@@ -1,0 +1,40 @@
+<h1>Listing customers</h1>
+
+<table>
+  <tr>
+    <th>Firma</th>
+    <th>Ulice</th>
+    <th>Číslo popisné</th>
+    <th>Město</th>
+    <th>Telefon</th>
+    <th>Email</th>
+    <th>Fax</th>
+    <th>Webová stránka</th>
+    <th>Ičo</th>
+    <th>Dič</th>
+  </tr>
+
+<% for customer in @customers %>
+  <tr>
+    <td><%=h customer.company %></td>
+    <td><%=h customer.street %></td>
+    <td><%=h customer.street_number %></td>
+    <td><%=h customer.town %></td>
+    <td><%=h customer.phone %></td>
+    <td><%=h customer.email %></td>
+    <td><%=h customer.fax %></td>
+    <td><%=h customer.web %></td>
+    <td><%=h customer.ICO %></td>
+    <td><%=h customer.DIC %></td>
+    <td><%= link_to 'Ukaž', customer %></td>
+    <td><%= link_to 'Změnit', edit_customer_path(customer) %></td>
+    <td><%= link_to 'Smazat', customer, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nový zákazník', new_customer_path %>
+<br />
+<%= link_to 'Administrace', :controller => "admin" %>

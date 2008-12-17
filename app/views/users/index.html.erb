@@ -1,17 +1,17 @@
-<h1>Listing users2</h1>
+<h1>Výpis uživatelů</h1>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th>Jméno</th>
   </tr>
 
 <% for user in @users %>
   <tr>
     <td><%=h user.name %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Ukaž', user %></td>
+    <td><%= link_to 'Změnit', edit_user_path(user) %></td>
 <% if session[:root] and user.name != 'root' %>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Smazat', user, :confirm => 'Jste si jistý?', :method => :delete %></td>
 <% end %>
   </tr>
 <% end %>
@@ -19,4 +19,4 @@
 
 <br />
 
-<%= link_to 'New user', new_user_path %>
+<%= link_to 'Nový uživatel', new_user_path %>

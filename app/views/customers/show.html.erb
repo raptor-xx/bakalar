@@ -1,0 +1,53 @@
+<p>
+  <b>Firma:</b>
+  <%=h @customer.company %>
+</p>
+
+<p>
+  <b>Ulice:</b>
+  <%=h @customer.street %>
+</p>
+
+<p>
+  <b>Číslo popisné:</b>
+  <%=h @customer.street_number %>
+</p>
+
+<p>
+  <b>Město:</b>
+  <%=h @customer.town %>
+</p>
+
+<p>
+  <b>Telefon:</b>
+  <%=h @customer.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @customer.email %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%=h @customer.fax %>
+</p>
+
+<p>
+  <b>Webová stránka:</b>
+  <%=h @customer.web %>
+</p>
+
+<p>
+  <b>Ičo:</b>
+  <%=h @customer.ICO %>
+</p>
+
+<p>
+  <b>Dič:</b>
+  <%=h @customer.DIC %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
