@@ -18,7 +18,7 @@ class AdminController < ApplicationController
         end
         redirect_to(uri || { :action => "index" })
       else
-        flash.now[:notice] = "Invalid login."
+        flash.now[:notice] = "Nesprávná kombinace jména a hesla."
       end
     end
   end
@@ -26,7 +26,7 @@ class AdminController < ApplicationController
   def logout
     session[:user_id] = nil
     session[:root] = nil
-    flash[:notice] = "User was logged out."
+    flash[:notice] = "Uživatel byl odlogován."
     redirect_to(:action => "login")
   end
 

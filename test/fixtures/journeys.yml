@@ -9,7 +9,7 @@ one:
   driver_id: 1
   car_id: 1
   tachymetr_before: 1
-  tachmetr_after: 1
+  tachymetr_after: 1
   user_id: 1
 
 two:
@@ -21,5 +21,5 @@ two:
   driver_id: 1
   car_id: 1
   tachymetr_before: 1
-  tachmetr_after: 1
+  tachymetr_after: 1
   user_id: 1

@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
   def authorize
     session[:original_uri] = request.request_uri
     unless User.find_by_id(session[:user_id])
-      flash[:notice] = "Please log in"
+      flash[:notice] = "Prosím zalogujte se"
       redirect_to(:controller => "admin", :action => "login")
     end
   end

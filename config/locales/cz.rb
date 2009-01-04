@@ -159,6 +159,10 @@
           :one => "Zákazník",
           :other => "Zákazníci",
         },
+        :driver => {
+          :one => "Řidič",
+          :other => "Řidiči",
+        },
         :employee => {
           :one => "Zaměstnanec",
           :other => "Zaměstnanci",
@@ -175,10 +179,41 @@
           :one => "Emailová adresa",
           :other => "Emailové adresy",
         },
+        :journey => {
+          :one => "Služební cesta",
+          :other => "Služební cesty",
+        },
+        :cashbook => {
+          :one => "Peněžní deník",
+          :other => "Peněžní deníky",
+        },
+        :user => {
+          :one => "Uživatel",
+          :other => "Uživatelé",
+        },
       },
       :attributes => {
         :customer => {
           :company => "Firma",
+          :phone => "Telefon",
+          :street_number => "Číslo popisné",
+          :ICO => "Ičo",
+        },
+        :driver => {
+          :personal_id => "Rodné číslo",
+          :phone => "Telefon",
+        },
+        :journey => {
+          :tachymetr_before => "Tachometr před",
+          :tachymetr_after => "Tachometr po",
+        },
+        :cashbook => {
+          :amount => "Částka",
+          :order => "Pořadové číslo záznamu",
+        },
+        :user => {
+          :name => "Uživatelské jméno",
+          :password  => "Heslo",
         },
         :employee => {
           :employee_number => "Zaměstnanecké číslo",

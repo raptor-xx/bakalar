@@ -13,7 +13,7 @@
   <tr>
     <td><%=h car.SPZ %></td>
     <td><%=h car.marque %></td>
-    <td><%=h car.type %></td>
+    <td><%=h car.car_type %></td>
     <td><%=h car.manufactured %></td>
     <td><%=h car.acquisition %></td>
     <td><%= link_to 'Ukaž', car %></td>
@@ -26,3 +26,5 @@
 <br />
 
 <%= link_to 'Nové auto', new_car_path %>
+<br />
+<%= link_to 'Hlavní stránka', :controller => "admin" %>

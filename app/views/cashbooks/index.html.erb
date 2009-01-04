@@ -2,24 +2,30 @@
 
 <table>
   <tr>
-    <th>Pohyb</th>
-    <th>Zákazník</th>
+    <th>ID</th>
+    <th>Předmět</th>
     <th>Datum</th>
-    <th>Kde</th>
+    <th>Pořadové číslo záznamu</th>
     <th>Částka</th>
-    <th>Dph</th>
     <th>Poznámka</th>
+    <th>Pohyb</th>
+    <th>Kde</th>
+    <th>Ovlivňuje základ daně</th>
+    <th>Dph</th>
   </tr>
 
 <% for cashbook in @cashbooks %>
   <tr>
-    <td><%=h @movement[cashbook.movement] %></td>
-    <td><%=h cashbook.customer_id %></td>
+    <td><%=h cashbook.id %></td>
+    <td><%=h cashbook.what %></td>
     <td><%=h cashbook.when %></td>
-    <td><%=h @where[cashbook.where] %></td>
-    <td><%=h cashbook.amount %></td>
-    <td><%=h @DPH[cashbook.DPH] %></td>
+    <td><%=h cashbook.order %></td>
+    <td><%=h number_to_currency cashbook.amount %></td>
     <td><%=h cashbook.comment %></td>
+    <td><%=h @movement[cashbook.movement] %></td>
+    <td><%=h @where[cashbook.where] %></td>
+    <td><%=h @changes_base[cashbook.changes_base] %></td>
+    <td><%=h @DPH[cashbook.DPH] %></td>
     <td><%= link_to 'Ukaž', cashbook %></td>
     <td><%= link_to 'Změnit', edit_cashbook_path(cashbook) %></td>
     <td><%= link_to 'Smazat', cashbook, :confirm => 'Jste si jistý?', :method => :delete %></td>
@@ -30,3 +36,5 @@
 <br />
 
 <%= link_to 'Nová položka peněžního deníku', new_cashbook_path %>
+<br />
+<%= link_to 'Hlavní stránka', :controller => "admin" %>

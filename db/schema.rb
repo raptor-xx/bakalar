@@ -9,14 +9,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081211141749) do
+ActiveRecord::Schema.define(:version => 20081216183052) do
 
   create_table "cars", :force => true do |t|
     t.string   "SPZ"
     t.string   "marque"
-    t.string   "type"
+    t.string   "car_type"
     t.date     "manufactured"
     t.date     "acquisition"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cashbooks", :force => true do |t|
+    t.string   "what"
+    t.date     "when"
+    t.integer  "order"
+    t.integer  "amount"
+    t.text     "comment"
+    t.integer  "movement"
+    t.integer  "where"
+    t.integer  "investment"
+    t.integer  "changes_base"
+    t.integer  "DPH"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -32,7 +48,7 @@ ActiveRecord::Schema.define(:version => 20081211141749) do
     t.integer  "fax"
     t.string   "web"
     t.integer  "ICO"
-    t.integer  "DIC"
+    t.string   "DIC"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -58,7 +74,7 @@ ActiveRecord::Schema.define(:version => 20081211141749) do
     t.integer  "driver_id"
     t.integer  "car_id"
     t.integer  "tachymetr_before"
-    t.integer  "tachmetr_after"
+    t.integer  "tachymetr_after"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

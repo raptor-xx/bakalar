@@ -1,4 +1,4 @@
 class Journey < ActiveRecord::Base
-  belongs_to :driver
-  belongs_to :car
+  validates_numericality_of :tachymetr_before
+  validates_numericality_of :tachymetr_after
 end

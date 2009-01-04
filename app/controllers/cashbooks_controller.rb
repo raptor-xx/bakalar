@@ -3,10 +3,11 @@ class CashbooksController < ApplicationController
   # GET /cashbooks.xml
   def index
     @cashbooks = Cashbook.find_all_by_user_id(session[:user_id])
-    #@customers = Customer.find_all_by_user_id(session[:user_id]).map { |c| c.id => c.company }
-    @movement = ['Příjem', 'Výdej'] 
-    @where =  ['Pokladna', 'Banka'] 
-    @DPH = ['Žádné DPH', '5%', '19%']
+    @movement = ['Příjem', 'Výdej']
+    @where =  ['Pokladna', 'Banka']
+    @investment = ['Investice', 'Režije']
+    @changes_base =['Ne', 'Ano']
+    @DPH = ['Žádné DPH', '9%', '19%']
 
     respond_to do |format|
       format.html # index.html.erb
@@ -23,10 +24,11 @@ class CashbooksController < ApplicationController
       redirect_to :action => :index
       return
     end
-    @customer = Customer.find(@cashbook.customer_id)
     @movement = ['Příjem', 'Výdej'] 
     @where =  ['Pokladna', 'Banka'] 
-    @DPH = ['Žádné DPH', '5%', '19%']
+    @investment = ['Investice', 'Režije']
+    @changes_base =['Ne', 'Ano']
+    @DPH = ['0%', '9%', '19%']
 
     respond_to do |format|
       format.html # show.html.erb
@@ -38,10 +40,10 @@ class CashbooksController < ApplicationController
   # GET /cashbooks/new.xml
   def new
     @cashbook = Cashbook.new
-    @customers = Customer.find_all_by_user_id(session[:user_id]).map { |c| [c.company, c.id]  }
     @movement = [['Příjem', 0], ['Výdej', 1]] 
-    @where =  [['Pokladna', 0], ['Banka', 1]] 
-    @DPH = [['Žádné DPH', 0], ['5%', 1], ['19%', 2]]
+    @where =  [['Pokladna', 0], ['Banka', 1]]
+    @investment = [['Investice', 0], ['Režije', 1]]
+    @DPH = [['0%', 0], ['9%', 1], ['19%', 2]]
 
     respond_to do |format|
       format.html # new.html.erb
@@ -57,10 +59,10 @@ class CashbooksController < ApplicationController
       redirect_to :action => :index
       return
     end
-    @customer = Customer.find_all_by_user_id(session[:user_id]).map { |c| [c.company, c.id]  }
     @movement = [['Příjem', 0], ['Výdej', 1]] 
     @where =  [['Pokladna', 0], ['Banka', 1]] 
-    @DPH = [['Žádné DPH', 0], ['5%', 1], ['19%', 2]]
+    @investment = [['Investice', 0], ['Režije', 1]]
+    @DPH = [['0%', 0], ['9%', 1], ['19%', 2]]
   end
 
   # POST /cashbooks
@@ -88,7 +90,7 @@ class CashbooksController < ApplicationController
 
     respond_to do |format|
       if @cashbook.update_attributes(params[:cashbook])
-        flash[:notice] = 'Cashbook was successfully updated.'
+        flash[:notice] = 'Položka v peněžním deníku úspěšně změněna.'
         format.html { redirect_to(@cashbook) }
         format.xml  { head :ok }
       else

@@ -9,7 +9,7 @@ class CreateJourneys < ActiveRecord::Migration
       t.integer :driver_id
       t.integer :car_id
       t.integer :tachymetr_before
-      t.integer :tachmetr_after
+      t.integer :tachymetr_after
       t.integer :user_id
 
       t.timestamps

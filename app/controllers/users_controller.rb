@@ -63,7 +63,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        flash[:notice] = 'User was successfully created.'
+        flash[:notice] = 'Uživatel byl úspěšně vytvořen.'
         format.html { redirect_to(@user) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
@@ -80,7 +80,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       respond_to do |format|
         if @user.update_attributes(params[:user])
-          flash[:notice] = 'User was successfully updated.'
+          flash[:notice] = 'Uživatel byl úspěšně pozměněn.'
           format.html { redirect_to(@user) }
           format.xml  { head :ok }
         else

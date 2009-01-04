@@ -4,32 +4,44 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :pohyb %><br />
-    <%= f.select :movement, @movement  %>
-  </p>
-  <p>
-    <%= f.label :zákazník %><br />
-    <%= f.select :customer_id, @customers  %>
+    <%= f.label :předmět %><br />
+    <%= f.text_field :what %>
   </p>
   <p>
     <%= f.label :datum %><br />
     <%= f.date_select :when %>
   </p>
   <p>
-    <%= f.label :kde %><br />
-    <%= f.select :where, @where %>
+    <%= f.label :pořadové_číslo_záznamu %><br />
+    <%= f.text_field :order %>
   </p>
   <p>
     <%= f.label :Částka %><br />
     <%= f.text_field :amount %>
   </p>
   <p>
-    <%= f.label :DPH %><br />
-    <%= f.select :DPH, @DPH %>
-  </p>
-  <p>
     <%= f.label :poznámka %><br />
     <%= f.text_area :comment %>
+  </p>
+  <p>
+    <%= f.label :pohyb %><br />
+    <%= f.select :movement, [['Příjem', 0], ['Výdej', 1]]  %>
+  </p>
+  <p>
+    <%= f.label :kde %><br />
+    <%= f.select :where, [['Pokladna', 0], ['Banka', 1]] %>
+  </p>
+  <p>
+    <%= f.label :typ_položky %><br />
+    <%= f.select :investment, [['Investice', 0], ['Režije', 1]] %>
+  </p>
+  <p>
+    <%= f.label :Ovlivňuje_základ_daně %><br />
+    <%= f.check_box(:changes_base) %>
+  </p>
+  <p>
+    <%= f.label :DPH %><br />
+    <%= f.select :DPH, [['0%', 0], ['9%', 1], ['19%', 2]] %>
   </p>
   <p>
     <%= f.submit "Vytvořit" %>

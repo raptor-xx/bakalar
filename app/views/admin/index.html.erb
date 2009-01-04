@@ -1,13 +1,22 @@
 <h1>Daňová evidence</h1>
+<% unless session[:root ]%>
+  <%= link_to 'Kontakty', :controller => "customers" %>
+  <br />
+  <br />
+  <%= link_to 'Řidiči', :controller => "drivers" %>
+  <br />
+  <br />
+  <%= link_to 'Auta', :controller => "cars" %>
+  <br />
+  <br />
+  <%= link_to 'Kniha jízd', :controller => "journeys" %>
+  <br />
+  <br />
+  <%= link_to 'Peněžní deník', :controller => "cashbooks" %>
+<% end %>
 <br />
-<%= link_to 'Logout', :action => "logout" %>
 <br />
-<%= link_to 'Customers', :controller => "customers" %>
+<%= link_to 'Uživatel', :controller => "users" %>
 <br />
-<%= link_to 'Řidiči', :controller => "drivers" %>
 <br />
-<%= link_to 'Auta', :controller => "cars" %>
-<br />
-<%= link_to 'Služební cesty', :controller => "journeys" %>
-<br />
-<%= link_to 'Peněžní deník', :controller => "cashbooks" %>
+<%= link_to 'Odhlásit se', :action => "logout" %>

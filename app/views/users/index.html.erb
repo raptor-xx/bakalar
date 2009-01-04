@@ -18,5 +18,8 @@
 </table>
 
 <br />
-
-<%= link_to 'Nový uživatel', new_user_path %>
+<% if session[:root] %>
+  <%= link_to 'Nový uživatel', new_user_path %>
+<% end %>
+<br />
+<%= link_to 'Hlavní stránka', :controller => "admin" %>

@@ -1,4 +1,4 @@
-<h1>Změna služební cesty</h1>
+<h1>Změna jízdy</h1>
 
 <% form_for(@journey) do |f| %>
   <%= f.error_messages %>
@@ -25,11 +25,11 @@
   </p>
   <p>
     <%= f.label :Řidič %><br />
-    <%= f.select :driver_id, @drivers %>
+    <%= f.select :driver_id, Driver.get_select( session[:user_id] ) %>
   </p>
   <p>
     <%= f.label :auto %><br />
-    <%= f.select :car_id, @cars %>
+    <%= f.select :car_id, Car.get_select( session[:user_id] ) %>
   </p>
   <p>
     <%= f.label :tachometr_před %><br />
@@ -37,7 +37,7 @@
   </p>
   <p>
     <%= f.label :tachometr_po %><br />
-    <%= f.text_field :tachmetr_after %>
+    <%= f.text_field :tachymetr_after %>
   </p>
   <p>
     <%= f.submit "Změnit" %>

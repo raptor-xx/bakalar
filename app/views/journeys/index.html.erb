@@ -1,4 +1,4 @@
-<h1>Listing journeys</h1>
+<h1>Výpis z knihy jízd</h1>
 
 <table>
   <tr>
@@ -23,7 +23,7 @@
     <td><%=h Driver.find(journey.driver_id).personal_id %></td>
     <td><%=h Car.find(journey.car_id).SPZ %></td>
     <td><%=h journey.tachymetr_before %></td>
-    <td><%=h journey.tachmetr_after %></td>
+    <td><%=h journey.tachymetr_after %></td>
     <td><%= link_to 'Ukaž', journey %></td>
     <td><%= link_to 'Změnit', edit_journey_path(journey) %></td>
     <td><%= link_to 'Smazat', journey, :confirm => 'Jste si jistý?', :method => :delete %></td>
@@ -33,4 +33,6 @@
 
 <br />
 
-<%= link_to 'Nová služební cesta', new_journey_path %>
+<%= link_to 'Nová jízda', new_journey_path %>
+<br />
+<%= link_to 'Hlavní stránka', :controller => "admin" %>

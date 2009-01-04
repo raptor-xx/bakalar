@@ -10,7 +10,7 @@ class CreateCustomers < ActiveRecord::Migration
       t.integer :fax
       t.string :web
       t.integer :ICO
-      t.integer :DIC
+      t.string :DIC
       t.integer :user_id
 
       t.timestamps

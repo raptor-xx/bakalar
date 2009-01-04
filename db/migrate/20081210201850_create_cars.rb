@@ -3,7 +3,7 @@ class CreateCars < ActiveRecord::Migration
     create_table :cars do |t|
       t.string :SPZ
       t.string :marque
-      t.string :type
+      t.string :car_type
       t.date :manufactured
       t.date :acquisition
       t.integer :user_id
