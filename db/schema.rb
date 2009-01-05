@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081216183052) do
+ActiveRecord::Schema.define(:version => 20090104204545) do
 
   create_table "cars", :force => true do |t|
     t.string   "SPZ"
@@ -80,6 +80,19 @@ ActiveRecord::Schema.define(:version => 20081216183052) do
     t.datetime "updated_at"
   end
 
+  create_table "longtime_resources", :force => true do |t|
+    t.string   "name"
+    t.integer  "initial_value"
+    t.date     "when"
+    t.integer  "depreciation_group"
+    t.integer  "depreciation_type"
+    t.integer  "first_rate"
+    t.integer  "continue_rate"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :default => "", :null => false
     t.text     "data"
@@ -89,6 +102,17 @@ ActiveRecord::Schema.define(:version => 20081216183052) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "tiny_resources", :force => true do |t|
+    t.integer  "order"
+    t.string   "name"
+    t.date     "formatting"
+    t.integer  "initial_value"
+    t.date     "disposal"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

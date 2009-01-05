@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  initial_value: 1
+  when: 2009-01-04
+  depreciation_type: 1
+  first_rate: 1
+  continue_rate: 1
+
+two:
+  name: MyString
+  initial_value: 1
+  when: 2009-01-04
+  depreciation_type: 1
+  first_rate: 1
+  continue_rate: 1

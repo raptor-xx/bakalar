@@ -29802,3 +29802,2337 @@ Processing AdminController#index (for 127.0.0.1 at 2009-01-04 13:01:27) [GET]
 Rendering template within layouts/admin
 Rendering admin/index
 Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-04 15:04:21) [GET]
+  Session ID: 9d2e112e8c47aa84118fc305a13af18a
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Redirected to actionlogincontrolleradmin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 7ms (DB: 3) | 302 Found [http://localhost/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-04 15:04:22) [GET]
+  Session ID: 9d2e112e8c47aa84118fc305a13af18a
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 16ms (View: 14, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-04 15:04:48) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Redirected to actionlogincontrolleradmin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 11ms (DB: 2) | 302 Found [http://localhost/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-04 15:04:48) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-04 15:04:55) [POST]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"name"=>"raptor", "commit"=>"Přihlášení", "authenticity_token"=>"d03128f077a95b60b083a10c15104e95b5f76449", "password"=>"login2"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`name` = 'raptor') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-04 15:05:00) [POST]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"name"=>"a", "commit"=>"Přihlášení", "authenticity_token"=>"d03128f077a95b60b083a10c15104e95b5f76449", "password"=>"login2"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`name` = 'a') LIMIT 1[0m
+Redirected to /
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-04 15:05:01) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-04 15:05:01) [POST]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"name"=>"a", "commit"=>"Přihlášení", "authenticity_token"=>"d03128f077a95b60b083a10c15104e95b5f76449", "password"=>"login2"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`name` = 'a') LIMIT 1[0m
+Redirected to /
+Completed in 14ms (DB: 2) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-04 15:05:01) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 20ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2009-01-04 15:05:04) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCustomer Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `customers`[0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM `customers` WHERE (`customers`.`user_id` = 2) [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 26ms (View: 7, DB: 3) | 200 OK [http://localhost/customers]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-04 15:05:09) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 22ms (View: 9, DB: 3) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-01-04 15:05:11) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 25ms (View: 10, DB: 4) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2009-01-04 15:05:15) [PUT]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"user"=>{"name"=>"raptor", "password_confirmation"=>"", "password"=>""}, "commit"=>"Změnit", "authenticity_token"=>"d03128f077a95b60b083a10c15104e95b5f76449", "id"=>"2"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`name` = BINARY 'raptor' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2009-01-04 14:05:15', `name` = 'raptor' WHERE `id` = 2[0m
+  [4;36;1mSQL (37.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<User:0xb6dcec48>
+Completed in 58ms (DB: 40) | 302 Found [http://localhost/users/2]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-04 15:05:15) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-04 15:05:18) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mUser Load (5.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 29ms (View: 8, DB: 9) | 200 OK [http://localhost/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-04 15:05:19) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081114170735)
+Migrating to AddUserRoot (20081114231318)
+Migrating to CreateSessions (20081117103951)
+Migrating to CreateCustomers (20081120113703)
+Migrating to CreateDrivers (20081210191048)
+Migrating to CreateCars (20081210201850)
+Migrating to CreateJourneys (20081211141749)
+Migrating to CreateCashbooks (20081216183052)
+Migrating to CreateLongtimeResources (20090104203919)
+  [4;36;1mSQL (66.8ms)[0m   [0;1mCREATE TABLE `longtime_resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `initial_value` int(11), `when` date, `depreciation_group` int(11), `depreciation_type` int(11), `first_rate` int(11), `continue_rate` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090104203919')[0m
+Migrating to CreateTinyResources (20090104204545)
+  [4;36;1mSQL (38.4ms)[0m   [0;1mCREATE TABLE `tiny_resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order` int(11), `name` varchar(255), `formatting` date, `initial_value` int(11), `disposal` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090104204545')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `cars`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `cars`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `cashbooks`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `cashbooks`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `cashbooks`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `customers`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mdescribe `customers`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `customers`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `journeys`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `journeys`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `journeys`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `longtime_resources`[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mSHOW KEYS FROM `longtime_resources`[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `tiny_resources`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tiny_resources`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-04 22:43:40) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 69ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing CashbooksController#index (for 127.0.0.1 at 2009-01-04 22:43:47) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCashbook Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `cashbooks`[0m
+  [4;36;1mCashbook Load (0.3ms)[0m   [0;1mSELECT * FROM `cashbooks` WHERE (`cashbooks`.`user_id` = 2) [0m
+Rendering template within layouts/cashbooks
+Rendering cashbooks/index
+Completed in 75ms (View: 40, DB: 6) | 200 OK [http://localhost/cashbooks]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-04 22:43:50) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 22:43:51) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (7.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb70b3c4c>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (30.4ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-04 22:44:04) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6ee64f0>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/tiny_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (21.6ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 22:44:55) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb7159ef8>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (23.5ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 22:47:29) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #14 of app/views/longtime_resources/index.html.erb:
+11:     <th>Pokračovací odpisová sazba</th>
+12:   </tr>
+13: 
+14: <% for longtime_resource in @longtime_resources %>
+15:   <tr>
+16:     <td><%=h longtime_resource.name %></td>
+17:     <td><%=h longtime_resource.initial_value %></td>
+
+    app/views/longtime_resources/index.html.erb:14
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:367:in `_render_with_layout'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:254:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:135:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:135:in `custom'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:164:in `call'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:164:in `respond'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:158:in `each'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:158:in `respond'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/longtime_resources_controller.rb:7:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (32.0ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (72.1ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 22:47:40) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb7024128>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (28.9ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-04 23:01:18) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6e9ce2c>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/tiny_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (22.0ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing JourneysController#index (for 127.0.0.1 at 2009-01-04 23:01:21) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mJourney Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `journeys`[0m
+  [4;36;1mJourney Load (0.3ms)[0m   [0;1mSELECT * FROM `journeys` WHERE (`journeys`.`user_id` = 2) [0m
+  [4;35;1mCar Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.2ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`user_id` = 2) [0m
+  [4;35;1mDriver Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `drivers`[0m
+  [4;36;1mDriver Load (0.3ms)[0m   [0;1mSELECT * FROM `drivers` WHERE (`drivers`.`user_id` = 2) [0m
+Rendering template within layouts/journeys
+Rendering journeys/index
+  [4;35;1mDriver Load (0.2ms)[0m   [0mSELECT * FROM `drivers` WHERE (`drivers`.`id` = 1) [0m
+  [4;36;1mCar Load (0.2ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 79ms (View: 30, DB: 6) | 200 OK [http://localhost/journeys]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:09:19) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6f26424>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (22.6ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.5ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:10:05) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (6.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6daa35c>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (81.7ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.0ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:10:06) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6f80f64>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (23.6ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CashbooksController#index (for 127.0.0.1 at 2009-01-04 23:10:43) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCashbook Columns (4.8ms)[0m   [0mSHOW FIELDS FROM `cashbooks`[0m
+  [4;36;1mCashbook Load (0.3ms)[0m   [0;1mSELECT * FROM `cashbooks` WHERE (`cashbooks`.`user_id` = 2) [0m
+Rendering template within layouts/cashbooks
+Rendering cashbooks/index
+Completed in 43ms (View: 18, DB: 7) | 200 OK [http://localhost/cashbooks]
+
+
+Processing CashbooksController#edit (for 127.0.0.1 at 2009-01-04 23:10:46) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCashbook Load (0.3ms)[0m   [0mSELECT * FROM `cashbooks` WHERE (`cashbooks`.`user_id` = 2 AND `cashbooks`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/cashbooks
+Rendering cashbooks/edit
+  [4;36;1mCashbook Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `cashbooks`[0m
+Completed in 38ms (View: 27, DB: 1) | 200 OK [http://localhost/cashbooks/1/edit]
+
+
+Processing CashbooksController#new (for 127.0.0.1 at 2009-01-04 23:10:52) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mCashbook Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `cashbooks`[0m
+Rendering template within layouts/cashbooks
+Rendering cashbooks/new
+Completed in 47ms (View: 35, DB: 2) | 200 OK [http://localhost/cashbooks/new]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:10:57) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6df8bb0>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (22.4ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#new (for 127.0.0.1 at 2009-01-04 23:11:01) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/new
+Completed in 30ms (View: 14, DB: 3) | 200 OK [http://localhost/longtime_resources/new]
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-04 23:11:16) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6f09f04>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/tiny_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (22.1ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TinyResourcesController#new (for 127.0.0.1 at 2009-01-04 23:11:18) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/new
+Completed in 99ms (View: 82, DB: 3) | 200 OK [http://localhost/tiny_resources/new]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:29:45) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:30:05) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6f0ae2c>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (22.1ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:34:17) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_by_user_id' for #<Class:0xb6d798d8>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (84.6ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.0ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#new (for 127.0.0.1 at 2009-01-04 23:37:18) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/new
+Completed in 40ms (View: 22, DB: 3) | 200 OK [http://localhost/longtime_resources/new]
+
+
+Processing LongtimeResourcesController#create (for 127.0.0.1 at 2009-01-04 23:37:24) [POST]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"commit"=>"Vytvoř", "authenticity_token"=>"d03128f077a95b60b083a10c15104e95b5f76449", "longtime_resource"=>{"initial_value"=>"a", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"a", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"a"}}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+
+
+NoMethodError (undefined method `user_id=' for #<LongtimeResource:0xb6e64c5c>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/attribute_methods.rb:255:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:54:in `create'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (35.9ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.5ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTinyResources (20090104204545)
+  [4;36;1mSQL (26.6ms)[0m   [0;1mDROP TABLE `tiny_resources`[0m
+  [4;35;1mSQL (12.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090104204545'[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `cars`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `cars`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `cashbooks`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `cashbooks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `cashbooks`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `customers`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `customers`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `customers`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `journeys`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `journeys`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `journeys`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (59.7ms)[0m   [0mdescribe `longtime_resources`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW KEYS FROM `longtime_resources`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081114170735)
+Migrating to AddUserRoot (20081114231318)
+Migrating to CreateSessions (20081117103951)
+Migrating to CreateCustomers (20081120113703)
+Migrating to CreateDrivers (20081210191048)
+Migrating to CreateCars (20081210201850)
+Migrating to CreateJourneys (20081211141749)
+Migrating to CreateCashbooks (20081216183052)
+Migrating to CreateLongtimeResources (20090104203919)
+Migrating to CreateTinyResources (20090104204545)
+  [4;35;1mSQL (19.8ms)[0m   [0mCREATE TABLE `tiny_resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order` int(11), `name` varchar(255), `formatting` date, `initial_value` int(11), `disposal` date, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090104204545')[0m
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-04 23:38:47) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mTinyResource Load (0.2ms)[0m   [0mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2) [0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/index
+Completed in 18ms (View: 4, DB: 3) | 200 OK [http://localhost/tiny_resources]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-04 23:38:50) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+
+
+NoMethodError (undefined method `find_all_by_user_id' for #<Class:0xb6f41134>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1778:in `method_missing'
+    /app/controllers/longtime_resources_controller.rb:5:in `index'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (23.0ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081114170735)
+Migrating to AddUserRoot (20081114231318)
+Migrating to CreateSessions (20081117103951)
+Migrating to CreateCustomers (20081120113703)
+Migrating to CreateDrivers (20081210191048)
+Migrating to CreateCars (20081210201850)
+Migrating to CreateJourneys (20081211141749)
+Migrating to CreateCashbooks (20081216183052)
+Migrating to CreateLongtimeResources (20090104203919)
+Migrating to CreateTinyResources (20090104204545)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `cars`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `cars`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `cashbooks`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `cashbooks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `cashbooks`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `customers`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `customers`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `customers`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `journeys`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `journeys`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `journeys`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `longtime_resources`[0m
+  [4;36;1mSQL (37.9ms)[0m   [0;1mSHOW KEYS FROM `longtime_resources`[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `tiny_resources`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tiny_resources`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (94.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `bakalar_test`[0m
+  [4;35;1mSQL (13.5ms)[0m   [0mCREATE DATABASE `bakalar_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (41.4ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `SPZ` varchar(255), `marque` varchar(255), `car_type` varchar(255), `manufactured` date, `acquisition` date, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (26.2ms)[0m   [0mCREATE TABLE `cashbooks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `what` varchar(255), `when` date, `order` int(11), `amount` int(11), `comment` text, `movement` int(11), `where` int(11), `investment` int(11), `changes_base` int(11), `DPH` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.4ms)[0m   [0mCREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `company` varchar(255), `street` varchar(255), `street_number` int(11), `town` varchar(255), `phone` int(11), `email` varchar(255), `fax` int(11), `web` varchar(255), `ICO` int(11), `DIC` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (82.4ms)[0m   [0mCREATE TABLE `drivers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `surname` varchar(255), `personal_id` int(11), `driving_licence` varchar(255), `phone` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (32.6ms)[0m   [0mCREATE TABLE `journeys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `begun` datetime, `finished` datetime, `from_where` varchar(255), `to_where` varchar(255), `purpose` text, `driver_id` int(11), `car_id` int(11), `tachymetr_before` int(11), `tachymetr_after` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCREATE TABLE `longtime_resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `initial_value` int(11), `when` date, `depreciation_group` int(11), `depreciation_type` int(11), `first_rate` int(11), `continue_rate` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.6ms)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) DEFAULT '' NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (19.9ms)[0m   [0;1mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;35;1mSQL (26.3ms)[0m   [0mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (30.2ms)[0m   [0mCREATE TABLE `tiny_resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order` int(11), `name` varchar(255), `formatting` date, `initial_value` int(11), `disposal` date, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (32.4ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (86.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (24.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090104204545')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081210201850')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081114170735')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090104203919')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081117103951')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081114231318')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081216183052')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081120113703')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081210191048')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081211141749')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTinyResources (20090104204545)
+  [4;36;1mSQL (27.2ms)[0m   [0;1mDROP TABLE `tiny_resources`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090104204545'[0m
+Migrating to CreateLongtimeResources (20090104203919)
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE `longtime_resources`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090104203919'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `cars`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `cars`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `cashbooks`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `cashbooks`[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mSHOW KEYS FROM `cashbooks`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `customers`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `customers`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `customers`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `journeys`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `journeys`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `journeys`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (47.4ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081114170735)
+Migrating to AddUserRoot (20081114231318)
+Migrating to CreateSessions (20081117103951)
+Migrating to CreateCustomers (20081120113703)
+Migrating to CreateDrivers (20081210191048)
+Migrating to CreateCars (20081210201850)
+Migrating to CreateJourneys (20081211141749)
+Migrating to CreateCashbooks (20081216183052)
+Migrating to CreateLongtimeResources (20090104203919)
+  [4;36;1mSQL (84.3ms)[0m   [0;1mCREATE TABLE `longtime_resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `initial_value` int(11), `when` date, `depreciation_group` int(11), `depreciation_type` int(11), `first_rate` int(11), `continue_rate` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090104203919')[0m
+Migrating to CreateTinyResources (20090104204545)
+  [4;36;1mSQL (47.9ms)[0m   [0;1mCREATE TABLE `tiny_resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order` int(11), `name` varchar(255), `formatting` date, `initial_value` int(11), `disposal` date, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090104204545')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `cars`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `cars`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `cashbooks`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `cashbooks`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `cashbooks`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `customers`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `customers`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `customers`[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `journeys`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `journeys`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `journeys`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `longtime_resources`[0m
+  [4;36;1mSQL (55.9ms)[0m   [0;1mSHOW KEYS FROM `longtime_resources`[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `tiny_resources`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tiny_resources`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2009-01-05 00:00:28) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mCustomer Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `customers`[0m
+  [4;35;1mCustomer Load (0.3ms)[0m   [0mSELECT * FROM `customers` WHERE (`customers`.`user_id` = 2) [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 58ms (View: 35, DB: 5) | 200 OK [http://localhost/customers]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-05 00:00:31) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mLongtimeResource Load (0.3ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 21ms (View: 5, DB: 5) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-05 00:00:33) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mTinyResource Load (1.9ms)[0m   [0mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2) [0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/index
+Completed in 28ms (View: 7, DB: 6) | 200 OK [http://localhost/tiny_resources]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-05 00:00:37) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mLongtimeResource Load (0.2ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 25ms (View: 7, DB: 3) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing LongtimeResourcesController#new (for 127.0.0.1 at 2009-01-05 00:00:38) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (6.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/new
+Completed in 100ms (View: 74, DB: 11) | 200 OK [http://localhost/longtime_resources/new]
+
+
+Processing LongtimeResourcesController#create (for 127.0.0.1 at 2009-01-05 00:00:47) [POST]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"commit"=>"Vytvoř", "authenticity_token"=>"d03128f077a95b60b083a10c15104e95b5f76449", "longtime_resource"=>{"initial_value"=>"a", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"a", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"a"}}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLongtimeResource Create (0.3ms)[0m   [0mINSERT INTO `longtime_resources` (`name`, `initial_value`, `updated_at`, `first_rate`, `depreciation_type`, `depreciation_group`, `continue_rate`, `when`, `user_id`, `created_at`) VALUES('a', 0, '2009-01-04 23:00:47', 0, 0, 0, 0, '2009-01-04', 2, '2009-01-04 23:00:47')[0m
+  [4;36;1mSQL (22.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<LongtimeResource:0xb6fa330c>
+Completed in 52ms (DB: 28) | 302 Found [http://localhost/longtime_resources]
+
+
+Processing LongtimeResourcesController#show (for 127.0.0.1 at 2009-01-05 00:00:47) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Load (2.1ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/show
+  [4;36;1mLongtimeResource Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 32ms (View: 12, DB: 6) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-05 00:00:52) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mLongtimeResource Load (1.7ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 32ms (View: 12, DB: 5) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-05 00:00:54) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-05 00:00:58) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mTinyResource Load (0.3ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2) [0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/index
+Completed in 27ms (View: 7, DB: 4) | 200 OK [http://localhost/tiny_resources]
+
+
+Processing TinyResourcesController#new (for 127.0.0.1 at 2009-01-05 00:01:00) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/new
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://localhost/tiny_resources/new]
+
+
+Processing TinyResourcesController#create (for 127.0.0.1 at 2009-01-05 00:01:07) [POST]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"commit"=>"Vytvoř", "tiny_resource"=>{"initial_value"=>"a", "name"=>"a", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"d03128f077a95b60b083a10c15104e95b5f76449"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTinyResource Create (0.2ms)[0m   [0;1mINSERT INTO `tiny_resources` (`name`, `initial_value`, `updated_at`, `order`, `formatting`, `user_id`, `disposal`, `created_at`) VALUES('a', 0, '2009-01-04 23:01:07', 0, '2009-01-04', 2, '2009-01-04', '2009-01-04 23:01:07')[0m
+  [4;35;1mSQL (26.7ms)[0m   [0mCOMMIT[0m
+Redirected to #<TinyResource:0xb6d76b24>
+Completed in 45ms (DB: 29) | 302 Found [http://localhost/tiny_resources]
+
+
+Processing TinyResourcesController#show (for 127.0.0.1 at 2009-01-05 00:01:07) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.2ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/show
+  [4;35;1mTinyResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+Completed in 19ms (View: 7, DB: 2) | 200 OK [http://localhost/tiny_resources/1]
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-05 00:01:12) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mTinyResource Load (0.3ms)[0m   [0mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2) [0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/index
+Completed in 33ms (View: 14, DB: 3) | 200 OK [http://localhost/tiny_resources]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-05 00:01:15) [GET]
+  Session ID: e9eea7fad35feee6e17791504bd872d6
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 26ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-05 14:01:32) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  [4;36;1mUser Columns (12.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Redirected to actionlogincontrolleradmin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 23ms (DB: 215) | 302 Found [http://localhost/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-05 14:01:32) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 45ms (View: 42, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-05 14:01:44) [POST]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"name"=>"raptor", "commit"=>"Přihlášení", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "password"=>"login2"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`name` = 'raptor') LIMIT 1[0m
+Redirected to /
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-05 14:01:44) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 32ms (View: 25, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-05 14:01:46) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (14.3ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mLongtimeResource Load (0.3ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 72ms (View: 27, DB: 16) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-05 14:03:54) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.7ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 44ms (View: 28, DB: 2) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-05 14:06:28) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.2ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+
+
+ActionView::TemplateError (undefined method `depreciation_typ' for #<LongtimeResource:0xb6e627e0>) on line #24 of app/views/longtime_resources/edit.html.erb:
+21:   </p>
+22:   <p>
+23:     <%= f.label :způsob_odepisování %><br />
+24:     <%= f.select :depreciation_typ, [['Pokladna', 0], ['Banka', 1]] %>
+25:   </p>
+26:   <p>
+27:     <%= f.label :prvotní_odpisová_sazba %><br />
+
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/attribute_methods.rb:260:in `method_missing'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_helper.rb:646:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_helper.rb:646:in `value'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_helper.rb:637:in `value'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_options_helper.rb:335:in `to_select_tag'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_options_helper.rb:99:in `select'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_options_helper.rb:376:in `select'
+    app/views/longtime_resources/edit.html.erb:24
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_helper.rb:313:in `fields_for'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/longtime_resources/edit.html.erb:3
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:367:in `_render_with_layout'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:254:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (65.1ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-05 14:06:40) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (7.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 45ms (View: 20, DB: 9) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-05 14:07:32) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.2ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-05 14:09:21) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+
+
+ActionView::TemplateError (wrong number of arguments (5 for 4)) on line #20 of app/views/longtime_resources/edit.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :odepisová_skupina %><br />
+20:     <%= f.select :depreciation_group, [['1', 1], ['2', 2], ['3', 3]], ['4', 4], ['5', 5], ['6', 6] %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :způsob_odepisování %><br />
+
+    app/views/longtime_resources/edit.html.erb:20:in `select'
+    app/views/longtime_resources/edit.html.erb:20
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_helper.rb:313:in `fields_for'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/longtime_resources/edit.html.erb:3
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:367:in `_render_with_layout'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:254:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (31.5ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-05 14:09:41) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.2ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 14:13:48) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 46ms (View: 10, DB: 4) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 14:23:02) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.5ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 39ms (View: 10, DB: 4) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-05 14:28:40) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mLongtimeResource Load (0.2ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 20ms (View: 8, DB: 2) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-05 14:28:43) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 20ms (View: 7, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-05 14:28:46) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Columns (19.4ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;35;1mTinyResource Load (0.2ms)[0m   [0mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2) [0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/index
+Completed in 70ms (View: 33, DB: 23) | 200 OK [http://localhost/tiny_resources]
+
+
+Processing TinyResourcesController#edit (for 127.0.0.1 at 2009-01-05 14:28:48) [GET]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.3ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+  [4;35;1mTinyResource Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+Completed in 49ms (View: 30, DB: 2) | 200 OK [http://localhost/tiny_resources/1/edit]
+
+
+Processing TinyResourcesController#update (for 127.0.0.1 at 2009-01-05 14:28:54) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "tiny_resource"=>{"initial_value"=>"a", "name"=>"a", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.2ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mTinyResource Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+
+NoMethodError (undefined method `first_rate' for #<TinyResource:0xb7112c24>):
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/attribute_methods.rb:260:in `method_missing'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/validations.rb:398:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/validations.rb:398:in `validates_each'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/validations.rb:397:in `each'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/validations.rb:397:in `validates_each'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:182:in `call'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:182:in `evaluate_method'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:166:in `call'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `run'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `each'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `run'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:277:in `run_callbacks'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/validations.rb:1029:in `valid_without_callbacks?'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/callbacks.rb:286:in `valid?'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/validations.rb:1008:in `save_without_dirty'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/dirty.rb:79:in `save_without_transactions'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:179:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:179:in `with_transaction_returning_status'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:129:in `transaction'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:138:in `transaction'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:178:in `with_transaction_returning_status'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:146:in `save'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:158:in `rollback_active_record_state!'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/transactions.rb:146:in `save'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:2470:in `update_attributes'
+    /app/controllers/tiny_resources_controller.rb:79:in `update'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:106:in `call'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/tiny_resources_controller.rb:78:in `update'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/raptor/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /home/raptor/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (38.7ms)
+Rendered /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/raptor/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TinyResourcesController#update (for 127.0.0.1 at 2009-01-05 14:29:48) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "tiny_resource"=>{"initial_value"=>"a", "name"=>"a", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (1.3ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mTinyResource Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+Completed in 51ms (View: 16, DB: 4) | 200 OK [http://localhost/tiny_resources/1]
+
+
+Processing TinyResourcesController#update (for 127.0.0.1 at 2009-01-05 14:30:43) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "tiny_resource"=>{"initial_value"=>"a", "name"=>"a", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.2ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mTinyResource Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+Completed in 34ms (View: 10, DB: 3) | 200 OK [http://localhost/tiny_resources/1]
+
+
+Processing TinyResourcesController#update (for 127.0.0.1 at 2009-01-05 14:31:20) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "tiny_resource"=>{"initial_value"=>"a", "name"=>"a", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.2ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mTinyResource Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+Completed in 32ms (View: 10, DB: 2) | 200 OK [http://localhost/tiny_resources/1]
+
+
+Processing TinyResourcesController#update (for 127.0.0.1 at 2009-01-05 14:31:33) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "tiny_resource"=>{"initial_value"=>"1", "name"=>"a", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.3ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mTinyResource Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+Completed in 40ms (View: 9, DB: 5) | 200 OK [http://localhost/tiny_resources/1]
+
+
+Processing TinyResourcesController#update (for 127.0.0.1 at 2009-01-05 14:32:29) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "tiny_resource"=>{"initial_value"=>"1", "name"=>"", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.2ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mTinyResource Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+Completed in 32ms (View: 10, DB: 2) | 200 OK [http://localhost/tiny_resources/1]
+
+
+Processing TinyResourcesController#update (for 127.0.0.1 at 2009-01-05 14:35:56) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "tiny_resource"=>{"initial_value"=>"1", "name"=>"", "order"=>"a", "formatting(1i)"=>"2009", "disposal(1i)"=>"2009", "formatting(2i)"=>"1", "disposal(2i)"=>"1", "formatting(3i)"=>"4", "disposal(3i)"=>"4"}, "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1"}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mTinyResource Load (0.2ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mTinyResource Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+Completed in 33ms (View: 10, DB: 2) | 200 OK [http://localhost/tiny_resources/1]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 14:53:13) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 59ms (View: 17, DB: 5) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 14:57:21) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 34ms (View: 9, DB: 2) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 14:57:31) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.2ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 32ms (View: 10, DB: 2) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 14:59:56) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (1.0ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 53ms (View: 15, DB: 4) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 18:31:45) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (12.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 95ms (View: 24, DB: 30) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 18:44:05) [PUT]
+  Session ID: 56e956ec44d05db8455c4d3a32ac7ae4
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"b2bd5b12388746e41a70702093871df9792b24e7", "id"=>"1", "longtime_resource"=>{"initial_value"=>"a", "name"=>"pokus pro long resc", "when(1i)"=>"2009", "first_rate"=>"a", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"a", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.4ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+Completed in 52ms (View: 15, DB: 4) | 200 OK [http://localhost/longtime_resources/1]

@@ -1,0 +1,40 @@
+<h1>Nový dlouhodobý majetek</h1>
+
+<% form_for(@longtime_resource) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :název %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :pořizovací_cena %><br />
+    <%= f.text_field :initial_value %>
+  </p>
+  <p>
+    <%= f.label :datum_pořízení %><br />
+    <%= f.date_select :when %>
+  </p>
+  <p>
+  <p>
+    <%= f.label :odepisová_skupina %><br />
+    <%= f.select :depreciation_group, [['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6]] %>
+  </p>
+  <p>
+    <%= f.label :způsob_odepisování %><br />
+    <%= f.select :depreciation_type, [['Rovnoměrný odpis', 0], ['Zrychlený odpis', 1]] %>
+  </p>
+  <p>
+    <%= f.label :prvotní_odpisová_sazba %><br />
+    <%= f.text_field :first_rate %>
+  </p>
+  <p>
+    <%= f.label :pokračovací_odpisová_sazba %><br />
+    <%= f.text_field :continue_rate %>
+  </p>
+  <p>
+    <%= f.submit "Vytvoř" %>
+  </p>
+<% end %>
+
+<%= link_to 'Zpět', longtime_resources_path %>

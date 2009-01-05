@@ -1,0 +1,34 @@
+<h1>Výpis dlouhodobého majetku</h1>
+
+<table>
+  <tr>
+    <th>Název</th>
+    <th>Pořizovací cena</th>
+    <th>Datum pořízení</th>
+    <th>Odpisová skupina</th>
+    <th>Způsob odepisování</th>
+    <th>Prvotní odpisová sazba</th>
+    <th>Pokračovací odpisová sazba</th>
+  </tr>
+
+<% for longtime_resource in @longtime_resources %>
+  <tr>
+    <td><%=h longtime_resource.name %></td>
+    <td><%=h longtime_resource.initial_value %></td>
+    <td><%=h longtime_resource.when %></td>
+    <td><%=h longtime_resource.depreciation_group %></td>
+    <td><%=h longtime_resource.depreciation_type %></td>
+    <td><%=h longtime_resource.first_rate %></td>
+    <td><%=h longtime_resource.continue_rate %></td>
+    <td><%= link_to 'Ukaž', longtime_resource %></td>
+    <td><%= link_to 'Změnit', edit_longtime_resource_path(longtime_resource) %></td>
+    <td><%= link_to 'Smazat', longtime_resource, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nový dlouhodobý majetek', new_longtime_resource_path %>
+<br />
+<%= link_to 'Hlavní stránka', :controller => "admin" %>

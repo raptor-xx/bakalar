@@ -155,6 +155,10 @@
         }
       },
       :models => {
+        :longtime_resource => {
+          :one => "Dlouhodobý majetek",
+          :other => "Dlouhodobé majetky",
+        },
         :customer => {
           :one => "Zákazník",
           :other => "Zákazníci",
@@ -170,6 +174,10 @@
         :company => {
           :one => "Podnik",
           :other => "Podniky",
+        },
+        :tiny_resource => {
+          :one => "Drobný majetek",
+          :other => "Drobné majetky",
         },
         :phone_number => {
           :one => "Telefonní číslo",
@@ -214,6 +222,17 @@
         :user => {
           :name => "Uživatelské jméno",
           :password  => "Heslo",
+        },
+        :longtime_resource => {
+          :name => "Název",
+          :initial_value => "Pořizovací cena",
+          :first_rate  => "Prvotní odpisová sazba",
+          :continue_rate => "Pokračovací odpisová sazba",
+        },
+        :tiny_resource => {
+          :name => "Název",
+          :order => "Číslo",
+          :initial_value  => "Pořizovací cena",
         },
         :employee => {
           :employee_number => "Zaměstnanecké číslo",

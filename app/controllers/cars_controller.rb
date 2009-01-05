@@ -16,9 +16,10 @@ class CarsController < ApplicationController
     @car = Car.find(:first, :conditions => {:id => params[:id], :user_id => session[:user_id]})
     unless @car
       flash[:notice] = 'Toto auto neexistuje!'
-    redirect_to :action => :index
-    return
+      redirect_to :action => :index
+      return
     end
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @car }
@@ -41,8 +42,8 @@ class CarsController < ApplicationController
     @car = Car.find(:first, :conditions => {:id => params[:id], :user_id => session[:user_id]})
     unless @car
       flash[:notice] = 'Toto auto neexistuje!'
-    redirect_to :action => :index
-    return
+      redirect_to :action => :index
+      return
     end
   end
 
@@ -70,8 +71,8 @@ class CarsController < ApplicationController
     @car = Car.find(:first, :conditions => {:id => params[:id], :user_id => session[:user_id]})
     unless @car
       flash[:notice] = 'Změna auta proběhla neúspěšně!'
-    redirect_to :action => :index
-    return
+      redirect_to :action => :index
+      return
     end
 
     respond_to do |format|

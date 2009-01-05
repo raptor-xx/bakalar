@@ -1,0 +1,38 @@
+<p>
+  <b>Název:</b>
+  <%=h @longtime_resource.name %>
+</p>
+
+<p>
+  <b>Pořizovací cena:</b>
+  <%=h @longtime_resource.initial_value %>
+</p>
+
+<p>
+  <b>Datum pořízení:</b>
+  <%=h @longtime_resource.when %>
+</p>
+
+<p>
+  <b>Odpisová skupina:</b>
+  <%=h @longtime_resource.depreciation_group %>
+</p>
+
+<p>
+  <b>Způsob odepisování:</b>
+  <%=h @longtime_resource.depreciation_type %>
+</p>
+
+<p>
+  <b>Prvotní odpisová sazba:</b>
+  <%=h @longtime_resource.first_rate %>
+</p>
+
+<p>
+  <b>Pokračovací odpisová sazba:</b>
+  <%=h @longtime_resource.continue_rate %>
+</p>
+
+
+<%= link_to 'Změnit', edit_longtime_resource_path(@longtime_resource) %> |
+<%= link_to 'Zpět', longtime_resources_path %>

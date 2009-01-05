@@ -1,0 +1,31 @@
+<h1>Nový drobný majetek</h1>
+
+<% form_for(@tiny_resource) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :Číslo %><br />
+    <%= f.text_field :order %>
+  </p>
+  <p>
+    <%= f.label :název %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :datum_zařazení %><br />
+    <%= f.date_select :formatting %>
+  </p>
+  <p>
+    <%= f.label :pořizovací_cena %><br />
+    <%= f.text_field :initial_value %>
+  </p>
+  <p>
+    <%= f.label :datum_vyřazení %><br />
+    <%= f.date_select :disposal %>
+  </p>
+  <p>
+    <%= f.submit "Vytvoř" %>
+  </p>
+<% end %>
+
+<%= link_to 'Zpět', tiny_resources_path %>

@@ -1,0 +1,28 @@
+<p>
+  <b>Číslo:</b>
+  <%=h @tiny_resource.order %>
+</p>
+
+<p>
+  <b>Název:</b>
+  <%=h @tiny_resource.name %>
+</p>
+
+<p>
+  <b>Datum zařazení:</b>
+  <%=h @tiny_resource.formatting %>
+</p>
+
+<p>
+  <b>Pořizovací cena:</b>
+  <%=h @tiny_resource.initial_value %>
+</p>
+
+<p>
+  <b>Datum vyřazení:</b>
+  <%=h @tiny_resource.disposal %>
+</p>
+
+
+<%= link_to 'Změnit', edit_tiny_resource_path(@tiny_resource) %> |
+<%= link_to 'Zpět', tiny_resources_path %>

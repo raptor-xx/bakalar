@@ -1,0 +1,2 @@
+module TinyResourcesHelper
+end

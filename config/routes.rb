@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :tiny_resources
+
+  map.resources :longtime_resources
+
   map.resources :cashbooks
 
   map.resources :journeys

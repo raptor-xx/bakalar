@@ -1,0 +1,30 @@
+<h1>Výpis drobného majetku</h1>
+
+<table>
+  <tr>
+    <th>Číslo</th>
+    <th>Název</th>
+    <th>Datum zařazení</th>
+    <th>Pořizovací cena</th>
+    <th>Datum vyřazení</th>
+  </tr>
+
+<% for tiny_resource in @tiny_resources %>
+  <tr>
+    <td><%=h tiny_resource.order %></td>
+    <td><%=h tiny_resource.name %></td>
+    <td><%=h tiny_resource.formatting %></td>
+    <td><%=h tiny_resource.initial_value %></td>
+    <td><%=h tiny_resource.disposal %></td>
+    <td><%= link_to 'Ukaž', tiny_resource %></td>
+    <td><%= link_to 'Změnit', edit_tiny_resource_path(tiny_resource) %></td>
+    <td><%= link_to 'Smazat', tiny_resource, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nový drobný majetek', new_tiny_resource_path %>
+<br />
+<%= link_to 'Hlavní stránka', :controller => "admin" %>

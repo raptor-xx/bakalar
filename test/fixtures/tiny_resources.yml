@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order: 1
+  name: MyString
+  formatting: 2009-01-04
+  initial_value: 1
+  disposal: 2009-01-04
+
+two:
+  order: 1
+  name: MyString
+  formatting: 2009-01-04
+  initial_value: 1
+  disposal: 2009-01-04
