@@ -32136,3 +32136,285 @@ Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-05 18:44
 Rendering template within layouts/longtime_resources
 Rendering longtime_resources/edit
 Completed in 52ms (View: 15, DB: 4) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-06 18:42:04) [GET]
+  Session ID: 8c87b9774397f17bcdc3c1e813889b8c
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Redirected to actionlogincontrolleradmin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-06 18:42:04) [GET]
+  Session ID: 8c87b9774397f17bcdc3c1e813889b8c
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-06 18:42:12) [POST]
+  Session ID: 8c87b9774397f17bcdc3c1e813889b8c
+  Parameters: {"name"=>"raptor", "commit"=>"Přihlášení", "authenticity_token"=>"fbccb101969995a3420b5f6b6202d9a7536fb982", "password"=>"login2"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`name` = 'raptor') LIMIT 1[0m
+Redirected to /
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-06 18:42:13) [GET]
+  Session ID: 8c87b9774397f17bcdc3c1e813889b8c
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-07 19:06:46) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;36;1mUser Columns (32.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+Redirected to actionlogincontrolleradmin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 46ms (DB: 218) | 302 Found [http://localhost/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-07 19:06:46) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 251ms (View: 249, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2009-01-07 19:06:54) [POST]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"name"=>"raptor", "commit"=>"Přihlášení", "authenticity_token"=>"39877ed4312290a74c357cd4eed8e6494bdb6631", "password"=>"login2"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`name` = 'raptor') LIMIT 1[0m
+Redirected to /
+Completed in 23ms (DB: 2) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-07 19:06:55) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 101ms (View: 93, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-07 19:06:57) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (23.7ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mLongtimeResource Load (0.5ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 80ms (View: 37, DB: 26) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-07 19:07:08) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.7ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 52ms (View: 33, DB: 4) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-07 19:07:15) [PUT]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"39877ed4312290a74c357cd4eed8e6494bdb6631", "id"=>"1", "longtime_resource"=>{"initial_value"=>"3", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"3", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"3", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.5ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLongtimeResource Update (0.3ms)[0m   [0mUPDATE `longtime_resources` SET `depreciation_group` = 1, `depreciation_type` = 0, `initial_value` = 3, `first_rate` = 3, `continue_rate` = 3, `updated_at` = '2009-01-07 18:07:15' WHERE `id` = 1[0m
+  [4;36;1mSQL (20.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<LongtimeResource:0xb6eb1674>
+Completed in 65ms (DB: 26) | 302 Found [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#show (for 127.0.0.1 at 2009-01-07 19:07:15) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Load (0.3ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/show
+  [4;36;1mLongtimeResource Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 67ms (View: 53, DB: 3) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-07 19:07:41) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mLongtimeResource Load (0.2ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 23ms (View: 9, DB: 3) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-07 19:07:44) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 21ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing TinyResourcesController#index (for 127.0.0.1 at 2009-01-07 19:07:45) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Columns (22.8ms)[0m   [0mSHOW FIELDS FROM `tiny_resources`[0m
+  [4;36;1mTinyResource Load (0.2ms)[0m   [0;1mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2) [0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/index
+Completed in 74ms (View: 32, DB: 25) | 200 OK [http://localhost/tiny_resources]
+
+
+Processing TinyResourcesController#edit (for 127.0.0.1 at 2009-01-07 19:07:51) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mTinyResource Load (0.3ms)[0m   [0mSELECT * FROM `tiny_resources` WHERE (`tiny_resources`.`user_id` = 2 AND `tiny_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/tiny_resources
+Rendering tiny_resources/edit
+  [4;36;1mTinyResource Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tiny_resources`[0m
+Completed in 57ms (View: 46, DB: 1) | 200 OK [http://localhost/tiny_resources/1/edit]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-07 19:08:03) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Load (0.2ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;36;1mLongtimeResource Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 34ms (View: 16, DB: 4) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-07 19:08:12) [PUT]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"39877ed4312290a74c357cd4eed8e6494bdb6631", "id"=>"1", "longtime_resource"=>{"initial_value"=>"3", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"3", "when(2i)"=>"1", "depreciation_type"=>"0", "when(3i)"=>"4", "continue_rate"=>"3", "depreciation_group"=>"1"}}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Load (0.3ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;36;1mLongtimeResource Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLongtimeResource Update (4.6ms)[0m   [0;1mUPDATE `longtime_resources` SET `depreciation_type` = 0, `updated_at` = '2009-01-07 18:08:12' WHERE `id` = 1[0m
+  [4;35;1mSQL (19.3ms)[0m   [0mCOMMIT[0m
+Redirected to #<LongtimeResource:0xb6ed9c14>
+Completed in 53ms (DB: 27) | 302 Found [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#show (for 127.0.0.1 at 2009-01-07 19:08:12) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (1.5ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/show
+  [4;35;1mLongtimeResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 92ms (View: 8, DB: 6) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-07 19:11:50) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 28ms (View: 16, DB: 2) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#show (for 127.0.0.1 at 2009-01-07 19:13:10) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/show
+  [4;35;1mLongtimeResource Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 31ms (View: 11, DB: 3) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#edit (for 127.0.0.1 at 2009-01-07 19:13:14) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (1.1ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/edit
+  [4;35;1mLongtimeResource Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 58ms (View: 33, DB: 3) | 200 OK [http://localhost/longtime_resources/1/edit]
+
+
+Processing LongtimeResourcesController#update (for 127.0.0.1 at 2009-01-07 19:13:17) [PUT]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"commit"=>"Změnit", "authenticity_token"=>"39877ed4312290a74c357cd4eed8e6494bdb6631", "id"=>"1", "longtime_resource"=>{"initial_value"=>"3", "name"=>"a", "when(1i)"=>"2009", "first_rate"=>"3", "when(2i)"=>"1", "depreciation_type"=>"1", "when(3i)"=>"4", "continue_rate"=>"3", "depreciation_group"=>"1"}}
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mLongtimeResource Load (0.2ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLongtimeResource Update (0.2ms)[0m   [0mUPDATE `longtime_resources` SET `depreciation_type` = 1, `updated_at` = '2009-01-07 18:13:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (25.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<LongtimeResource:0xb7190048>
+Completed in 48ms (DB: 31) | 302 Found [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#show (for 127.0.0.1 at 2009-01-07 19:13:17) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Load (0.3ms)[0m   [0mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2 AND `longtime_resources`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/show
+  [4;36;1mLongtimeResource Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `longtime_resources`[0m
+Completed in 31ms (View: 11, DB: 3) | 200 OK [http://localhost/longtime_resources/1]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-07 19:13:19) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mLongtimeResource Load (0.3ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 34ms (View: 12, DB: 5) | 200 OK [http://localhost/longtime_resources]
+
+
+Processing LongtimeResourcesController#index (for 127.0.0.1 at 2009-01-07 19:13:56) [GET]
+  Session ID: 5c2a16869155c99136e895d6724b10b0
+  [4;35;1mUser Columns (7.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mLongtimeResource Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `longtime_resources`[0m
+  [4;36;1mLongtimeResource Load (0.2ms)[0m   [0;1mSELECT * FROM `longtime_resources` WHERE (`longtime_resources`.`user_id` = 2) [0m
+Rendering template within layouts/longtime_resources
+Rendering longtime_resources/index
+Completed in 31ms (View: 7, DB: 10) | 200 OK [http://localhost/longtime_resources]

@@ -17,7 +17,7 @@
     <td><%=h longtime_resource.initial_value %></td>
     <td><%=h longtime_resource.when %></td>
     <td><%=h longtime_resource.depreciation_group %></td>
-    <td><%=h longtime_resource.depreciation_type %></td>
+    <td><%=h @depreciation_type[longtime_resource.depreciation_type] %></td>
     <td><%=h longtime_resource.first_rate %></td>
     <td><%=h longtime_resource.continue_rate %></td>
     <td><%= link_to 'Ukaž', longtime_resource %></td>

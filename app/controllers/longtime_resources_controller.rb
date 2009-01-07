@@ -3,6 +3,7 @@ class LongtimeResourcesController < ApplicationController
   # GET /longtime_resources.xml
   def index
     @longtime_resources = LongtimeResource.find_all_by_user_id(session[:user_id])
+    @depreciation_type = ['Rovnoměrný odpis', 'Zrychlený odpis'] 
 
     respond_to do |format|
       format.html # index.html.erb
@@ -19,6 +20,7 @@ class LongtimeResourcesController < ApplicationController
       redirect_to :action => :index
       return
     end
+    @depreciation_type = ['Rovnoměrný odpis', 'Zrychlený odpis'] 
 
     respond_to do |format|
       format.html # show.html.erb
