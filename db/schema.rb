@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090104204545) do
+ActiveRecord::Schema.define(:version => 20090108192726) do
 
   create_table "cars", :force => true do |t|
     t.string   "SPZ"
@@ -60,6 +60,30 @@ ActiveRecord::Schema.define(:version => 20090104204545) do
     t.integer  "personal_id"
     t.string   "driving_licence"
     t.integer  "phone"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "invoice_ins", :force => true do |t|
+    t.integer  "customer_id"
+    t.string   "number"
+    t.date     "exposition"
+    t.date     "maturity"
+    t.text     "description"
+    t.integer  "amount"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "invoice_outs", :force => true do |t|
+    t.integer  "customer_id"
+    t.string   "number"
+    t.date     "exposition"
+    t.date     "maturity"
+    t.text     "description"
+    t.integer  "amount"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

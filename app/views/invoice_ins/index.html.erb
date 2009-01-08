@@ -1,0 +1,32 @@
+<h1>Výpis přijatých faktur</h1>
+
+<table>
+  <tr>
+    <th>Zákazník</th>
+    <th>Číslo_faktury</th>
+    <th>Datum_vystavení</th>
+    <th>Datum_splatnosti</th>
+    <th>Popis</th>
+    <th>Cena</th>
+  </tr>
+
+<% for invoice_in in @invoice_ins %>
+  <tr>
+    <td><%=h Customer.find(invoice_in.customer_id).company %></td>
+    <td><%=h invoice_in.number %></td>
+    <td><%=h invoice_in.exposition %></td>
+    <td><%=h invoice_in.maturity %></td>
+    <td><%=h invoice_in.description %></td>
+    <td><%=h invoice_in.amount %></td>
+    <td><%= link_to 'Ukaž', invoice_in %></td>
+    <td><%= link_to 'Změnit', edit_invoice_in_path(invoice_in) %></td>
+    <td><%= link_to 'Smazat', invoice_in, :confirm => 'Jste si jistý?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nová přijatá faktura', new_invoice_in_path %>
+<br />
+<%= link_to 'Hlavní stránka', :controller => "admin" %>

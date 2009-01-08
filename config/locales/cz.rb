@@ -155,6 +155,14 @@
         }
       },
       :models => {
+        :invoice_out => {
+          :one => "Vydaná faktura",
+          :other => "Vydané faktury",
+        },
+        :invoice_in => {
+          :one => "Přijatá faktura",
+          :other => "Přijaté faktury",
+        },
         :longtime_resource => {
           :one => "Dlouhodobý majetek",
           :other => "Dlouhodobé majetky",
@@ -201,6 +209,12 @@
         },
       },
       :attributes => {
+        :invoice_in => {
+          :amount => "Cena",
+        },        
+        :invoice_out => {
+          :amount => "Cena",
+        },
         :customer => {
           :company => "Firma",
           :phone => "Telefon",

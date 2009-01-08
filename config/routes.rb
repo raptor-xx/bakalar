@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :invoice_outs
+
+  map.resources :invoice_ins
+
   map.resources :tiny_resources
 
   map.resources :longtime_resources

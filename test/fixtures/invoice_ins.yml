@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  customer_id: 1
+  number: MyString
+  exposition: 2009-01-08
+  maturity: 2009-01-08
+  description: MyText
+  amount: 1
+
+two:
+  customer_id: 1
+  number: MyString
+  exposition: 2009-01-08
+  maturity: 2009-01-08
+  description: MyText
+  amount: 1

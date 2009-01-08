@@ -3,7 +3,7 @@ class CustomersController < ApplicationController
   # GET /customers.xml
   
   def index
-    @customers = Customer.find_all_by_user_id(session[:user_id])
+    @customers = Customer.find_all_by_user_id(session[:user_id], :order => "company")
 
     respond_to do |format|
       format.html # index.html.erb

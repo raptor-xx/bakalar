@@ -5,9 +5,9 @@ class CashbooksController < ApplicationController
     @cashbooks = Cashbook.find_all_by_user_id(session[:user_id])
     @movement = ['Příjem', 'Výdej']
     @where =  ['Pokladna', 'Banka']
-    @investment = ['Investice', 'Režije']
+    @investment = ['Investice', 'Režie', 'Drobný předmět']
     @changes_base =['Ne', 'Ano']
-    @DPH = ['Žádné DPH', '9%', '19%']
+    @DPH = ['0%', '9%', '19%']
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,7 +26,7 @@ class CashbooksController < ApplicationController
     end
     @movement = ['Příjem', 'Výdej'] 
     @where =  ['Pokladna', 'Banka'] 
-    @investment = ['Investice', 'Režije']
+    @investment = ['Investice', 'Režie', 'Drobný předmět']
     @changes_base =['Ne', 'Ano']
     @DPH = ['0%', '9%', '19%']
 
@@ -42,7 +42,7 @@ class CashbooksController < ApplicationController
     @cashbook = Cashbook.new
     @movement = [['Příjem', 0], ['Výdej', 1]] 
     @where =  [['Pokladna', 0], ['Banka', 1]]
-    @investment = [['Investice', 0], ['Režije', 1]]
+    @investment = [['Investice', 0], ['Režie', 1], ['Drobný předmět', 2]]
     @DPH = [['0%', 0], ['9%', 1], ['19%', 2]]
 
     respond_to do |format|
@@ -61,7 +61,7 @@ class CashbooksController < ApplicationController
     end
     @movement = [['Příjem', 0], ['Výdej', 1]] 
     @where =  [['Pokladna', 0], ['Banka', 1]] 
-    @investment = [['Investice', 0], ['Režije', 1]]
+    @investment = [['Investice', 0], ['Režie', 1], ['Drobný předmět', 2]]
     @DPH = [['0%', 0], ['9%', 1], ['19%', 2]]
   end
 

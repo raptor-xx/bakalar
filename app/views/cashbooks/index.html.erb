@@ -2,14 +2,15 @@
 
 <table>
   <tr>
-    <th>ID</th>
+    <th>Pořadové číslo záznamu</th>
     <th>Předmět</th>
     <th>Datum</th>
-    <th>Pořadové číslo záznamu</th>
+    <th>Číslo dokladu</th>
     <th>Částka</th>
     <th>Poznámka</th>
     <th>Pohyb</th>
     <th>Kde</th>
+    <th>Typ položky</th>
     <th>Ovlivňuje základ daně</th>
     <th>Dph</th>
   </tr>
@@ -24,6 +25,7 @@
     <td><%=h cashbook.comment %></td>
     <td><%=h @movement[cashbook.movement] %></td>
     <td><%=h @where[cashbook.where] %></td>
+    <td><%=h @investment[cashbook.investment] %></td>
     <td><%=h @changes_base[cashbook.changes_base] %></td>
     <td><%=h @DPH[cashbook.DPH] %></td>
     <td><%= link_to 'Ukaž', cashbook %></td>

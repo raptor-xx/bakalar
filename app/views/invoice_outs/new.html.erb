@@ -1,0 +1,35 @@
+<h1>Nová vydaná faktura</h1>
+
+<% form_for(@invoice_out) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :zákazník %><br />
+    <%= f.select :customer_id, Customer.get_select( session[:user_id] ) %>
+  </p>
+  <p>
+    <%= f.label :Číslo_faktury %><br />
+    <%= f.text_field :number %>
+  </p>
+  <p>
+    <%= f.label :datum_vystavení %><br />
+    <%= f.date_select :exposition %>
+  </p>
+  <p>
+    <%= f.label :datum_splatnosti %><br />
+    <%= f.date_select :maturity %>
+  </p>
+  <p>
+    <%= f.label :popis %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :cena %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.submit "Vytvořit" %>
+  </p>
+<% end %>
+
+<%= link_to 'Zpět', invoice_outs_path %>

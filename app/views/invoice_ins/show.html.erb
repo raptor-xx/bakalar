@@ -1,0 +1,33 @@
+<p>
+  <b>Zákazník:</b>
+  <%=h @customer.company %>
+</p>
+
+<p>
+  <b>Číslo_faktury:</b>
+  <%=h @invoice_in.number %>
+</p>
+
+<p>
+  <b>Datum_vystavení:</b>
+  <%=h @invoice_in.exposition %>
+</p>
+
+<p>
+  <b>Datum_splatnosti:</b>
+  <%=h @invoice_in.maturity %>
+</p>
+
+<p>
+  <b>Popis:</b>
+  <%=h @invoice_in.description %>
+</p>
+
+<p>
+  <b>Cena:</b>
+  <%=h @invoice_in.amount %>
+</p>
+
+
+<%= link_to 'Změnit', edit_invoice_in_path(@invoice_in) %> |
+<%= link_to 'Zpět', invoice_ins_path %>
