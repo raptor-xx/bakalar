@@ -34349,3 +34349,25 @@ Processing CustomersController#index (for 127.0.0.1 at 2009-01-09 00:35:12) [GET
 Rendering template within layouts/customers
 Rendering customers/index
 Completed in 58ms (View: 13, DB: 29) | 200 OK [http://localhost/customers]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-01-09 00:36:55) [GET]
+  Session ID: 3005593eaa52c8370aa39382785456ff
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing InvoiceInsController#index (for 127.0.0.1 at 2009-01-09 00:36:57) [GET]
+  Session ID: 3005593eaa52c8370aa39382785456ff
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mInvoiceIn Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `invoice_ins`[0m
+  [4;36;1mInvoiceIn Load (0.2ms)[0m   [0;1mSELECT * FROM `invoice_ins` WHERE (`invoice_ins`.`user_id` = 2) [0m
+Rendering template within layouts/invoice_ins
+Rendering invoice_ins/index
+  [4;35;1mCustomer Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `customers`[0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM `customers` WHERE (`customers`.`id` = 1) [0m
+Completed in 38ms (View: 18, DB: 4) | 200 OK [http://localhost/invoice_ins]
